@@ -13,6 +13,13 @@ correspond au travail en cours.
 | `integration-api.md` | appel réseau, erreurs, états de chargement |
 | `performance-frontend.md` | page lente, liste longue, image lourde |
 
+## Pour les landing pages
+
+Un second jeu de huit fiches vit dans `skills/landing-page/` :
+direction artistique, structure, textes, système de composants,
+contenu séparé, mouvement, images et polices, métadonnées. La méthode
+correspondante est dans `docs/landing-pages.md`.
+
 ## Comment s'en servir
 
 ```

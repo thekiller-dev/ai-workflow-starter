@@ -58,10 +58,11 @@ Puis ouvre une session avec ton agent et colle
 | --- | --- |
 | `workflow.md` | le fichier central, quatre étapes, à copier à la racine de ton projet |
 | `AGENTS.md` | ce que l'agent lit en premier dans une session |
-| `docs/` | une page par étape, plus les lignes rouges et le déroulé d'une session |
+| `docs/` | une page par étape, les lignes rouges, le déroulé d'une session, les landing pages |
 | `specs/` | le gabarit de spécification et une spécification réelle, remplie |
-| `prompts/` | huit consignes prêtes à coller, du cadrage au message de commit |
+| `prompts/` | onze consignes prêtes à coller, du cadrage au message de commit |
 | `skills/` | six fiches de compétence que l'agent charge à la demande |
+| `skills/landing-page/` | huit fiches de plus, spécifiques aux landing pages |
 | `checklists/` | avant d'exécuter, avant de commiter, avant de livrer |
 | `scripts/` | créer une tâche, vérifier le projet |
 | `projet/` | un site vitrine React, TypeScript, Tailwind, Vite, avec un formulaire de contact |
@@ -88,6 +89,19 @@ rattrapé à la main sur une mauvaise consigne reproduira le même défaut à
 la tâche suivante.
 
 ---
+
+## Travailler sur une landing page
+
+Une landing page se délègue mal sans méthode : un agent y produit en
+quelques secondes une page correcte et anonyme. Le dossier
+`skills/landing-page/`, le gabarit `specs/_gabarit-landing.md`, les
+consignes 10 à 12 et la liste `checklists/avant-livraison-landing.md`
+traitent ce cas. La méthode est expliquée dans `docs/landing-pages.md`.
+
+Ces fiches s'appuient sur l'étude de la collection ouverte
+[ln-dev7/landing-pages](https://github.com/ln-dev7/landing-pages) de LN,
+quatorze pages sous licence MIT, Next.js, Tailwind CSS et shadcn/ui.
+Rien n'en est copié : ce qui est repris, c'est la discipline.
 
 ## Les règles courtes
 
