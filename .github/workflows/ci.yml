@@ -8,16 +8,19 @@ on:
 jobs:
   verifier:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dossier: [projet, landing]
     defaults:
       run:
-        working-directory: projet
+        working-directory: ${{ matrix.dossier }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
-          cache-dependency-path: projet/package-lock.json
+          cache-dependency-path: ${{ matrix.dossier }}/package-lock.json
       - run: npm ci
       - run: npm run lint
       - run: npm run test

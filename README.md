@@ -41,7 +41,7 @@ cp workflow.md AGENTS.md ../mon-projet/     # dans ton projet à toi
 Pour essayer sur le projet d'exemple :
 
 ```bash
-cd projet
+cd projet           # ou cd landing, pour la page de démonstration
 npm install
 npm run dev         # http://localhost:5173
 npm run verifier    # types, lint, tests, build
@@ -66,6 +66,7 @@ Puis ouvre une session avec ton agent et colle
 | `checklists/` | avant d'exécuter, avant de commiter, avant de livrer |
 | `scripts/` | créer une tâche, vérifier le projet |
 | `projet/` | un site vitrine React, TypeScript, Tailwind, Vite, avec un formulaire de contact |
+| `landing/` | TERRE, une landing page de démonstration construite avec les fiches ci-dessus |
 
 ---
 
@@ -97,6 +98,10 @@ quelques secondes une page correcte et anonyme. Le dossier
 `skills/landing-page/`, le gabarit `specs/_gabarit-landing.md`, les
 consignes 10 à 12 et la liste `checklists/avant-livraison-landing.md`
 traitent ce cas. La méthode est expliquée dans `docs/landing-pages.md`.
+
+Une page de démonstration complète, **TERRE**, est dans `landing/` :
+elle applique les huit fiches et sert de référence à copier. Son brief
+est dans `specs/LP-001-terre.md`.
 
 Ces fiches s'appuient sur l'étude de la collection ouverte
 [ln-dev7/landing-pages](https://github.com/ln-dev7/landing-pages) de LN,

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="TERRE">
+  <rect width="32" height="32" rx="7" fill="#B4512B" />
+  <path d="M9 22c0-4.5 3.1-8 7-8s7 3.5 7 8z" fill="#F5EFE6" />
+  <rect x="9" y="22" width="14" height="2.4" rx="1.2" fill="#F5EFE6" />
+</svg>

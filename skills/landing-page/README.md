@@ -18,6 +18,12 @@ pile, à l'exception des points nommant un fichier précis.
 
 Pour la recette finale, voir `checklists/avant-livraison-landing.md`.
 
+## L'exemple
+
+`landing/` contient TERRE, une page de démonstration construite avec
+ces huit fiches, et son brief est dans `specs/LP-001-terre.md`. Chaque
+fiche y a un point d'application nommé dans le README du dossier.
+
 ## Rappel
 
 Une compétence oriente le regard de l'agent sur un seul sujet. En
