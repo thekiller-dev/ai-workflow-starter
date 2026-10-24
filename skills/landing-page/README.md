@@ -1,9 +1,16 @@
 # Compétences · Landing page
 
-Huit fiches, à charger une par une. Elles supposent la pile de la
-collection de référence : Next.js, React, Tailwind CSS 4, shadcn/ui en
-variante Base UI, polices locales. Elles restent valables sur une autre
-pile, à l'exception des points nommant un fichier précis.
+Onze fiches, à charger une par une.
+
+Elles ne sont pas écrites à partir de principes généraux : elles sont
+tirées de la lecture du code de la collection `ln-dev7/landing-pages`
+(MIT), quatorze landing pages autonomes en Next.js 16, React 19,
+Tailwind CSS 4 et shadcn/ui en variante Base UI. Chaque fiche donne un
+patron de code observé, des points vérifiables numérotés, les
+anti-patrons correspondants, et la façon de contrôler le résultat.
+
+Les patrons restent valables sur une autre pile ; seuls les points qui
+nomment un fichier précis sont à transposer.
 
 | Fiche | Quand la charger |
 | --- | --- |
@@ -12,17 +19,23 @@ pile, à l'exception des points nommant un fichier précis.
 | `copywriting.md` | pour écrire ou relire les textes |
 | `systeme-de-composants.md` | dès qu'un bouton, un champ ou un panneau apparaît |
 | `contenu-separe.md` | pour sortir les données des composants |
+| `illustrations-svg.md` | pour dessiner des scènes en code plutôt que poser des photos |
 | `mouvement.md` | pour toute animation, apparition ou effet au défilement |
-| `images-et-polices.md` | photos, illustrations, typographies, licences |
+| `parcours-au-defilement.md` | pour un tracé qui relie des étapes et un objet qui le suit |
+| `images-et-polices.md` | photos, typographies, poids, licences |
 | `metadonnees-et-partage.md` | titre, description, image de partage, indexation |
+| `honnetete-demo.md` | avant de livrer une page de démonstration |
+
+À part : `agents-md-type.md` donne le gabarit de conventions à poser à
+la racine du projet, une fois, au démarrage.
 
 Pour la recette finale, voir `checklists/avant-livraison-landing.md`.
 
 ## L'exemple
 
 `landing/` contient TERRE, une page de démonstration construite avec
-ces huit fiches, et son brief est dans `specs/LP-001-terre.md`. Chaque
-fiche y a un point d'application nommé dans le README du dossier.
+ces fiches, et son brief est dans `specs/LP-001-terre.md`. Chaque fiche
+y a un point d'application nommé dans le README du dossier.
 
 ## Rappel
 

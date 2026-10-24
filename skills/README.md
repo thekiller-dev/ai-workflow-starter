@@ -15,10 +15,13 @@ correspond au travail en cours.
 
 ## Pour les landing pages
 
-Un second jeu de huit fiches vit dans `skills/landing-page/` :
+Un second jeu de onze fiches vit dans `skills/landing-page/` :
 direction artistique, structure, textes, système de composants,
-contenu séparé, mouvement, images et polices, métadonnées. La méthode
-correspondante est dans `docs/landing-pages.md`.
+contenu séparé, illustrations SVG, mouvement, parcours au défilement,
+images et polices, métadonnées, honnêteté d'une démonstration. Elles
+sont écrites à partir du code lu dans une collection de référence :
+patron observé, points vérifiables, anti-patrons, vérification. La
+méthode correspondante est dans `docs/landing-pages.md`.
 
 ## Comment s'en servir
 

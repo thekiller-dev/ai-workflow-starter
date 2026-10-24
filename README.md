@@ -62,7 +62,7 @@ Puis ouvre une session avec ton agent et colle
 | `specs/` | le gabarit de spécification et une spécification réelle, remplie |
 | `prompts/` | onze consignes prêtes à coller, du cadrage au message de commit |
 | `skills/` | six fiches de compétence que l'agent charge à la demande |
-| `skills/landing-page/` | huit fiches de plus, spécifiques aux landing pages |
+| `skills/landing-page/` | onze fiches de plus, spécifiques aux landing pages |
 | `checklists/` | avant d'exécuter, avant de commiter, avant de livrer |
 | `scripts/` | créer une tâche, vérifier le projet |
 | `projet/` | un site vitrine React, TypeScript, Tailwind, Vite, avec un formulaire de contact |
@@ -100,7 +100,7 @@ consignes 10 à 12 et la liste `checklists/avant-livraison-landing.md`
 traitent ce cas. La méthode est expliquée dans `docs/landing-pages.md`.
 
 Une page de démonstration complète, **TERRE**, est dans `landing/` :
-elle applique les huit fiches et sert de référence à copier. Son brief
+elle applique ces fiches et sert de référence à copier. Son brief
 est dans `specs/LP-001-terre.md`.
 
 Ces fiches s'appuient sur l'étude de la collection ouverte

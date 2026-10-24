@@ -17,15 +17,30 @@ Premier poste de poids d'une landing page, et premier risque juridique.
 6. Le format est moderne, et la compression visible à l'œil est
    refusée : une photo granuleuse abîme une page soignée.
 
+## Dessiner plutôt que photographier
+
+Dans la collection de référence, il n'y a presque aucune photographie :
+les scènes sont des composants SVG. C'est un choix de poids autant que
+de style. Une illustration en code pèse quelques kilo-octets, se
+recolore par jeton, s'anime par classe, et ne pose aucune question de
+licence. Voir `illustrations-svg.md`.
+
 ## Polices
 
 1. Polices hébergées localement, jamais chargées depuis un service
    tiers : c'est une requête de moins, un traceur de moins.
-2. Deux familles au maximum, et le nombre de graisses strictement
-   nécessaire.
+2. Deux familles au maximum. Mieux : **une seule police variable**,
+   dont les axes de graisse, de largeur et de taille optique portent
+   toute l'échelle typographique. Un seul fichier remplace alors six
+   graisses statiques.
 3. Affichage immédiat avec repli, pour que le texte soit lisible avant
    la fin du chargement.
 4. Le fichier de licence accompagne la police dans le dépôt.
+5. La police est déclarée une fois, en variable de thème, et appelée
+   par cette variable. Aucun nom de famille écrit en dur dans un
+   composant.
+6. Les axes variables se règlent dans l'échelle typographique, pas au
+   cas par cas : `font-variation-settings: "opsz" 96, "wdth" 90`.
 
 ## Licences et crédits
 

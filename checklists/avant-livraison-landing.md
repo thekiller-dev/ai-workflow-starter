@@ -15,6 +15,20 @@
 - [ ] La page reste lisible avant l'exécution du JavaScript
 - [ ] Les formulaires annoncent leurs erreurs, et conservent la saisie
 
+## Illustrations et mouvement
+
+- [ ] Les `defs` SVG partagés ne sont rendus qu'une fois dans la page
+- [ ] Aucune couleur en dur dans une scène : tout vient de la palette
+- [ ] Les scènes décoratives sont masquées aux technologies
+      d'assistance, les scènes porteuses de sens ont une légende
+- [ ] Les états de départ d'animation ne s'appliquent que si le script
+      est actif
+- [ ] Un seul observateur d'intersection, qui cesse d'observer après
+      la première entrée
+- [ ] Un seul écouteur de défilement, passif, une image par cycle
+- [ ] Le tracé du parcours est mesuré sur le DOM et remesuré au
+      redimensionnement
+
 ## Poids
 
 - [ ] Seule l'image du premier écran est prioritaire, le reste est

@@ -53,5 +53,16 @@ Ce qui mérite d'être copié n'est pas le code, c'est la discipline :
 
 ## Les compétences
 
-Elles sont dans `skills/landing-page/`. On en charge une à la fois,
-celle qui correspond au travail en cours.
+Elles sont dans `skills/landing-page/` : onze fiches, plus un gabarit
+d'`AGENTS.md`. On en charge une à la fois, celle qui correspond au
+travail en cours.
+
+Elles ont été réécrites à partir du code réellement lu dans la
+collection de référence : chacune donne un patron de code observé, des
+points vérifiables numérotés, les anti-patrons correspondants et la
+façon de contrôler le résultat. Une fiche qui n'énonce que des
+principes ne change pas la sortie d'un agent ; une fiche qui montre le
+patron et la règle vérifiable, oui.
+
+Les trois fiches à charger en premier sur une page illustrée :
+`direction-artistique.md`, `illustrations-svg.md`, `mouvement.md`.

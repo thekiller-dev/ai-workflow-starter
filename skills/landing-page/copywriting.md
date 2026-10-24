@@ -20,6 +20,24 @@ une mise en page se dessine autour de ses mots, jamais l'inverse.
 7. **Les microtextes comptent** : état vide, message d'erreur, écran de
    confirmation. Ce sont eux qu'on lit quand quelque chose ne va pas.
 
+## Ce que le code impose aux textes
+
+Trois contraintes viennent du code de la collection de référence, et
+elles changent la rédaction :
+
+- **Les textes vivent dans un fichier de données typé**, pas dans les
+  composants. Écrire un titre, c'est modifier une donnée.
+- **Les apostrophes et les guillemets passent par une fonction
+  d'embellissement.** Ne pas écrire de caractères droits dans les
+  données.
+- **Les titres sont bornés en caractères** (`max-w-[11.5ch]`) et
+  équilibrés par `text-wrap: balance`. Un titre de plus de dix mots ne
+  tiendra pas : il se coupe à l'écriture, pas à la mise en page.
+
+Et un quatrième, propre aux pages illustrées : **chaque scène dessinée
+a une légende courte**, lisible seule. C'est à la fois le texte de
+remplacement de l'illustration et une phrase de la page.
+
 ## Interdit sur une démonstration
 
 Faux témoignages, fausses disponibilités, faux prix présentés comme
