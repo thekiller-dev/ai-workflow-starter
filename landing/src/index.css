@@ -44,6 +44,27 @@
   }
 }
 
+@layer components {
+  /* Bandeau defilant : immobile tant que le script n'a pas confirme que
+     les animations sont acceptees. */
+  .defile {
+    animation: defile 28s linear infinite;
+    animation-play-state: paused;
+  }
+  .anime .defile {
+    animation-play-state: running;
+  }
+}
+
+@keyframes defile {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 /* Repli materiel : si le reglage systeme change, la regle s'applique
    immediatement, sans rechargement. */
 @media (prefers-reduced-motion: reduce) {
@@ -52,5 +73,9 @@
     opacity: 1;
     transform: none;
     transition: none;
+  }
+  .defile,
+  .anime .defile {
+    animation: none;
   }
 }

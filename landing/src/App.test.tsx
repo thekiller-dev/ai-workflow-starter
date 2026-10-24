@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, it } from "vitest";
 
@@ -8,6 +8,16 @@ describe("Landing TERRE", () => {
   it("n'a qu'un seul titre de niveau un", () => {
     render(<App />);
     expect(screen.getAllByRole("heading", { level: 1 })).toHaveLength(1);
+  });
+
+  it("affiche les quatre étapes du parcours", () => {
+    render(<App />);
+    const parcours = screen.getByRole("region", {
+      name: /parcours d'une séance/i,
+    });
+    expect(within(parcours).getAllByRole("listitem")).toHaveLength(4);
+    expect(screen.getByText("Centrer la terre")).toBeVisible();
+    expect(screen.getByText("Repartir avec")).toBeVisible();
   });
 
   it("ouvre et ferme une question au clavier", async () => {

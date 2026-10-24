@@ -1,10 +1,11 @@
+import { Atelier } from "../../illustrations/atelier";
 import { marque, reperes } from "../../lib/content";
 import { ButtonLink } from "../ui/button";
 
 export function Hero() {
   return (
-    <section className="border-b border-encre/15">
-      <div className="mx-auto max-w-page px-6 pb-14 pt-10 sm:pt-16">
+    <section className="relative overflow-hidden border-b border-encre/15">
+      <div className="mx-auto max-w-page px-6 pb-0 pt-10 sm:pt-14">
         <p className="flex items-center gap-2 text-xs uppercase tracking-[0.22em] text-terre">
           <span
             aria-hidden="true"
@@ -13,19 +14,30 @@ export function Hero() {
           Atelier de poterie · {marque.lieu}
         </p>
 
-        <h1 className="mt-7 font-titre text-[clamp(2.75rem,11vw,6.5rem)] leading-[0.95]">
-          Deux heures,
-          <br />
-          une pièce,
-          <span className="text-terre"> vos mains.</span>
-        </h1>
+        <div className="mt-6 grid items-end gap-10 md:grid-cols-[1.05fr_0.95fr]">
+          <div>
+            <h1 className="font-titre text-[clamp(2.75rem,10vw,6rem)] leading-[0.92]">
+              Deux heures,
+              <br />
+              une pièce,
+              <span className="text-terre"> vos mains.</span>
+            </h1>
+            <p className="mt-7 max-w-md text-lg text-encre/75">
+              {marque.description}
+            </p>
+            <div className="mt-8 flex flex-wrap items-center gap-5">
+              <ButtonLink href="#reserver">{marque.action}</ButtonLink>
+              {/* etiquette de cuisson, posee de travers comme sur un four */}
+              <span className="-rotate-3 rounded-sm border border-dashed border-encre/35 bg-kraft px-3 py-1.5 text-xs uppercase tracking-widest">
+                Four nº 2 · samedi 10 h
+              </span>
+            </div>
+          </div>
 
-        <div className="mt-9 flex flex-col gap-7 sm:flex-row sm:items-end sm:justify-between">
-          <p className="max-w-md text-lg text-encre/75">{marque.description}</p>
-          <ButtonLink href="#reserver">{marque.action}</ButtonLink>
+          <Atelier className="w-full" />
         </div>
 
-        <dl className="mt-14 grid grid-cols-1 gap-8 border-t border-encre/15 pt-8 sm:grid-cols-3">
+        <dl className="mt-12 grid grid-cols-1 gap-8 border-t border-encre/15 py-8 sm:grid-cols-3">
           {reperes.map((repere) => (
             <div key={repere.valeur} className="reveal">
               <dt className="font-titre text-5xl text-terre">{repere.valeur}</dt>

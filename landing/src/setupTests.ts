@@ -30,3 +30,15 @@ Object.defineProperty(window, "IntersectionObserver", {
   writable: true,
   value: ObservateurFactice,
 });
+
+// jsdom n'implemente pas ResizeObserver : le parcours s'en passe, mais
+// on le simule pour que le code de mesure soit execute.
+class RedimensionnementFactice {
+  observe = vi.fn();
+  unobserve = vi.fn();
+  disconnect = vi.fn();
+}
+Object.defineProperty(window, "ResizeObserver", {
+  writable: true,
+  value: RedimensionnementFactice,
+});

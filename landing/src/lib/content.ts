@@ -36,15 +36,30 @@ export const etapes = [
     numero: "02",
     titre: "Monter la pièce",
     texte:
-      "Un bol, une tasse, un vase bas. On choisit en arrivant, on change d'avis en cours de route, personne ne s'en formalise.",
+      "Un bol, une tasse, un vase bas. On choisit en arrivant, on change d'avis en route, personne ne s'en formalise.",
   },
   {
     id: "cuire",
     numero: "03",
-    titre: "Cuire et repartir",
+    titre: "Passer au four",
     texte:
-      "La pièce passe au four pendant qu'on boit un thé. Elle part avec vous, chaude, dans un papier kraft.",
+      "La pièce cuit pendant qu'on boit un thé, à l'ombre, sous le manguier de la cour.",
   },
+  {
+    id: "repartir",
+    numero: "04",
+    titre: "Repartir avec",
+    texte:
+      "Emballée dans son papier kraft, encore tiède. Rien à venir rechercher trois semaines plus tard.",
+  },
+];
+
+export const bandeau = [
+  "tour de potier",
+  "argile locale",
+  "six places",
+  "cuisson le jour même",
+  "aucune expérience",
 ];
 
 export const seances = [
